@@ -1,0 +1,7 @@
+.vscode
+build
+dist
+*.egg-info
+*pycache*
+bottle.py
+venv
