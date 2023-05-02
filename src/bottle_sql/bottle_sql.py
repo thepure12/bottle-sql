@@ -104,13 +104,16 @@ class SQLPlugin:
 
 
 def sqlPlugin(
-    user=None, password="", host=None, database=None, dictcursor=True
+    user=None, password="", host=None, database=None, dictrows=True
 ) -> SQLPlugin:
     return SQLPlugin(
         Engine.SQL,
         {"user": user, "password": password, "host": host, "database": database},
+        dictrows=dictrows,
     )
 
 
-def sqlitePlugin(database, dictcursor=True) -> SQLPlugin:
-    return SQLPlugin(Engine.SQLITE, sql_config={"database": database})
+def sqlitePlugin(database, dictrows=True) -> SQLPlugin:
+    return SQLPlugin(
+        Engine.SQLITE, sql_config={"database": database}, dictrows=dictrows
+    )
