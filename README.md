@@ -4,11 +4,11 @@ SQL plugin for Bottle. Supports MySQL/MariaDB and SQLite.
 ## Installation
 ### PyPi
 ``` bash
-pip install <TODO>
+pip install pip install bottle-sql==0.0.1
 ```
 ### Source
 ```bash
-wget <TODO>
+wget https://raw.githubusercontent.com/thepure12/bottle-sql/main/src/bottle_sql/bottle_sql.py
 ```
 
 ## Usage
