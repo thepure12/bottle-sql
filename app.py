@@ -3,6 +3,7 @@ import src.bottle_sql as sql
 from sqlite3 import Cursor
 
 app = Bottle()
+sql_plugin = sql.sqlPlugin("bottle_sql", "", "localhost", "bottle_sql")
 sql_plugin = sql.sqlitePlugin(":memory:")
 app.install(sql_plugin)
 
