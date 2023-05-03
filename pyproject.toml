@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bottle_sql"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="TJ Renninger", email="renninger12@gmail.com" },
 ]
@@ -17,5 +17,5 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-  "bottle"
+  "bottle", "pymysql"
 ]
